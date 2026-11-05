@@ -1,1 +1,14 @@
-[["50", "food", "2026-10-25"], ["50", "food", "2026-10-25"], ["25", "food", "2026-10-25"]]
+[
+    {
+        "amount": 50.0,
+        "category": "food",
+        "date": "2026-11-05",
+        "description": ""
+    },
+    {
+        "amount": 50.0,
+        "category": "food",
+        "date": "2026-11-05",
+        "description": ""
+    }
+]
