@@ -1,3 +1,4 @@
+from datetime import datetime
 from expense_manager import ExpenseManager
 from storage import Storage
 
@@ -27,6 +28,11 @@ class CLIUserInterface:
             return
         category = input("Category: ")
         date = input("Date (YYYY-MM-DD): ")
+        try:
+            datetime.strptime(date, "%Y-%m-%d")
+        except ValueError:
+            print("Invalid date format. Use YYYY-MM-DD.")
+            return
         description = input("Description (optional): ")
         self.manager.add_expense(amount, category, date, description)
         self.storage.save(self.manager.get_all())
