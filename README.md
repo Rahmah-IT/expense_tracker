@@ -1,19 +1,22 @@
 # Expense Tracker
 
-This is a simple expense tracker project written in Python.
+A console-based Python application to add, view, filter, and export expenses.
 
 ## Features
-- Add new expenses.
-- View saved expenses.
-- Filter expenses by category and date.
-- Calculate total expenses.
-- Save expenses to a JSON file.
+- Add expenses (amount, category, date, description)
+- View all expenses with a total
+- Filter by category and/or date range
+- Save and load expenses in JSON format
+- Export expenses to CSV (opens in Microsoft Excel)
+
+## Project Structure
+- `main.py`: starts the application
+- `cli.py`: `CLIUserInterface` class (menu and user input)
+- `models.py`: `Expense` class
+- `expense_manager.py`: `ExpenseManager` class (add, list, filter, total)
+- `storage.py`: `Storage` class (JSON save/load and CSV export)
 
 ## How to Run
 1. Open the project in VS Code.
-2. Run main.py.
+2. Run `python main.py`.
 3. Choose an option from the menu.
-
-## Files
-- main.py: Main program.
-- expense.py: Expense functions.
