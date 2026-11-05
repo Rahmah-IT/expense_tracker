@@ -1,4 +1,5 @@
 import json
+from cli import CLIUserInterface
 try:
      with open("expenses.json","r") as file:
           expenses = json.load(file)
@@ -6,11 +7,9 @@ except (FileNotFoundError, json.jSONDecodError):
      expenses =[]
 from expense import add_expense,view_expenses
 while True:
+        CLIUserInterface() .print_menu()
      
-        print("Welcome to Expense tracker")
-        print("1. Add Expense")
-        print("2. View Expenses")
-        print("3. Exit")
+       
         choice = input("choose an option (1-3):")
         if choice == "1":
             print("Add Expense selected")
