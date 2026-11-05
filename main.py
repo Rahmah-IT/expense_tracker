@@ -10,7 +10,7 @@ while True:
         CLIUserInterface() .print_menu()
      
        
-        choice = input("choose an option (1-3):")
+        choice = CLIUserInterface() .get_choice()
         if choice == "1":
             print("Add Expense selected")
             amount, category, date = add_expense()
