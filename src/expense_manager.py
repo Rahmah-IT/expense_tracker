@@ -1,4 +1,4 @@
-from models import Expense
+from src.models import Expense
 
 
 class ExpenseManager:

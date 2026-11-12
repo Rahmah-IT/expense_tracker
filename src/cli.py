@@ -1,6 +1,6 @@
 from datetime import datetime
-from expense_manager import ExpenseManager
-from storage import Storage
+from src.expense_manager import ExpenseManager
+from src.storage import Storage
 
 
 class CLIUserInterface:
